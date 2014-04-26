@@ -37,8 +37,12 @@ birdApp.countdown = function(n) {
 	} else {
 		birdApp.ctx.fillText("Go!", birdApp.width/2, birdApp.height/3);
 		setTimeout(function(){
+            if(!birdApp.survivalMode) {
+                birdApp.timeStarted = Date.now();
+                birdApp.gameTimer = setTimeout(birdApp.gameOver, 60 * 1000 - birdApp.timeElapsed);
+            }
 			birdApp.addEventListeners(birdApp.onTouch);
-			birdApp.newCell(true)
+            birdApp.newCell(true);
 		}, 750);
 	}
 };
@@ -60,13 +64,26 @@ birdApp.start = function (mode) {
 	birdApp.removeEventListeners();
 	birdApp.score = 0;
 	birdApp.speed = 50;
-	birdApp.countdown(3);
+
 	if(!mode.survival){
 		birdApp.speed = 50;
 		birdApp.survivalMode = false;
-		setTimeout(birdApp.gameOver, 6075*10);
+        birdApp.timeElapsed = 0;
 	} else {
 		birdApp.survivalMode = true;
 	}
+    birdApp.countdown(3);
+};
+
+birdApp.pause = function() {
+    clearTimeout(birdApp.gameTimer);
+    birdApp.clearTimeouts();
+    birdApp.timeElapsed = Date.now() - birdApp.timeStarted;
+    birdApp.addEventListeners(birdApp.pauseTouch);
+    birdApp.drawPause();
+};
+
+birdApp.unpause = function(){
+    birdApp.countdown(3);
 };
 

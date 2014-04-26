@@ -122,9 +122,18 @@
         adFrame.origin.y = self.view.frame.size.width-adView.frame.size.height;
     }
     adView.frame = adFrame;
+    adView.delegate = self;
     [self.view addSubview:adView];
 
     return [super webViewDidFinishLoad:theWebView];
+}
+
+- (void)bannerViewDidLoadAd:(ADBannerView *)banner {
+    adView.hidden = NO;
+}
+
+- (void)bannerView:(ADBannerView *)banner didFailToReceiveAdWithError:(NSError *)error {
+    adView.hidden = YES;
 }
 
 /* Comment out the block below to over-ride */

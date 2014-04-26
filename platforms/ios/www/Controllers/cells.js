@@ -75,3 +75,27 @@ birdApp.menuCheck = function(event) {
 		}
 	}
 }
+
+birdApp.pauseCheck = function(touch) {
+    var width = birdApp.width;
+    var height = birdApp.height;
+    if(touch.x > 8*(width/9)){
+       if(touch.y < height/10) {
+         return true;
+       }
+    }
+    return false;
+};
+
+birdApp.pausedCheck = function (touch) {
+    var width = birdApp.width;
+    var height = birdApp.height;
+    if(touch.x > width /4) {
+        if(touch.y >  height/3 && touch.y < (height/3 + birdApp.cont.height)) {
+        	return {quit: true};
+        }
+        else if(touch.y > height/2 && touch.y < (height/2 + birdApp.quit.height)) {
+        	return {continue: true};
+        }
+    }
+}

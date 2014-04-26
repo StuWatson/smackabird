@@ -18,7 +18,9 @@ birdApp.drawBird = function (cell, old) {
         birdApp.ctx.font=(birdApp.height/25)+"px Base";
         birdApp.ctx.textAlign = "center";
         birdApp.ctx.fillStyle = "#990000";
-		birdApp.ctx.fillText("Score: "+birdApp.score, width/2, birdApp.height/6)
+		birdApp.ctx.fillText("Score: "+birdApp.score, width/2, height/6);
+        birdApp.ctx.textAlign = "left";
+        birdApp.ctx.fillText("||", 8*(width/9), height/11);
 		birdApp.ctx.fill();
 	}
 	console.log(cell);

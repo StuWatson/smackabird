@@ -4,6 +4,8 @@ birdApp.drawHowToPlay = function () {
 	birdApp.ctx.font="28px Base";
 	birdApp.createHelpText();
 	birdApp.addEventListeners(birdApp.helpTouch, false);
+	var text = querySelector('#helpText');
+	text.addEventListener(birdApp.input, birdApp.helpTouch, false);
 };
 
 birdApp.createHelpText = function() {
