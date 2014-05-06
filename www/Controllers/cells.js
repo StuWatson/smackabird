@@ -45,8 +45,8 @@ birdApp.newCell = function (start) {
 	var cell = birdApp.randomise();
 	if(!start){
 		var old = birdApp.activeCell;
-		if(cell.x == birdApp.activeCell.x && cell.y == birdApp.activeCell.y){
-			var cell = birdApp.randomise();
+		if(cell.x == old.x && cell.y == old.y){
+			return birdApp.newCell();
 		}
 	}
 	birdApp.activeCell = cell;
