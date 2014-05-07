@@ -24,22 +24,25 @@ canvas {
 #helpText {
 	display:none;
 	font-family: Base;
-	color: black;
 	font-size: 20px;
-	color: #990000;	
+	color: #990000;
+}
+
+#audioText{
+  font-size: 16px;
 }
 
 #survival {
 	display:none;
-}	
+}
 #timer {
 	display:none;
 }
 #help {
 	display:none;
 }
-html { 
-  background: url(images/Sky_Blue.png) no-repeat center center fixed; 
+html {
+  background: url(images/Sky_Blue.png) no-repeat center center fixed;
   -webkit-background-size: cover;
   -moz-background-size: cover;
   -o-background-size: cover;
@@ -48,6 +51,3 @@ html {
 body {
 	margin: 0;
 }
-
-
-

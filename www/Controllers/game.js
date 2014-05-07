@@ -65,6 +65,10 @@ birdApp.start = function (mode) {
 	birdApp.score = 0;
 	birdApp.speed = 50;
 
+	if(birdApp.tuneIsPaused) {
+		birdApp.tune.play();
+	}
+
 	if(!mode.survival){
 		birdApp.speed = 50;
 		birdApp.survivalMode = false;

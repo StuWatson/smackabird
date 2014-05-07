@@ -11,9 +11,9 @@ birdApp.drawHowToPlay = function () {
 birdApp.createHelpText = function() {
 	var p = document.querySelector('#helpText');
 	p.style.display = 'block';
-	p.style.top = birdApp.height/8+"px";
-	p.style.marginLeft = birdApp.width/5+"px";
-	p.style.marginRight = birdApp.width/5+"px";
+	p.style.top = birdApp.height/20+"px";
+	p.style.marginLeft = birdApp.width/8+"px";
+	p.style.marginRight = birdApp.width/8+"px";
 	p.style.position = "relative";
 	p.style.zIndex = 3;
 };
