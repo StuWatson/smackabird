@@ -23,7 +23,6 @@ birdApp.drawBird = function (cell, old) {
         birdApp.ctx.fillText("||", 8*(width/9), height/11);
 		birdApp.ctx.fill();
 	}
-	console.log(cell);
 };
 
 birdApp.birdImage.onload = function () {

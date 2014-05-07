@@ -14,7 +14,6 @@ birdApp.drawBg = function() {
 };
 
 birdApp.removeHtml = function (id) {
-	console.log(id);
 	var button = document.querySelector(id);
 	button.parentNode.removeChild(button);
 };
