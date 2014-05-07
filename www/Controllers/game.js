@@ -22,7 +22,7 @@ birdApp.update = function(cell) {
 		birdApp.newCell();
 	} else if (cell && birdApp.survivalMode) {
 		birdApp.gameOver();
-	} 
+	}
 };
 
 birdApp.countdown = function(n) {
@@ -52,13 +52,13 @@ birdApp.highScore = function () {
 	if(!localStorage[gameType] || parseInt(localStorage[gameType])<birdApp.score){
 		localStorage.setItem(gameType, birdApp.score);
 	}
-	
+
 };
 
 birdApp.gameOver = function() {
 	birdApp.highScore();
 	birdApp.drawGameOver();
-}
+};
 
 birdApp.start = function (mode) {
 	birdApp.removeEventListeners();
@@ -87,3 +87,8 @@ birdApp.unpause = function(){
     birdApp.countdown(3);
 };
 
+birdApp.getPhoneGapPath = function() {
+    var path = window.location.pathname;
+    path = path.substr( path, path.length - 10 );
+    return 'file://' + path;
+};

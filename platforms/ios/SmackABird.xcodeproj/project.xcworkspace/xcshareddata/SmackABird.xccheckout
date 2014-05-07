@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>IDESourceControlProjectFavoriteDictionaryKey</key>
+	<false/>
+	<key>IDESourceControlProjectIdentifier</key>
+	<string>A48B29C2-A870-46F3-941A-790A8C58CF0D</string>
+	<key>IDESourceControlProjectName</key>
+	<string>SmackABird</string>
+	<key>IDESourceControlProjectOriginsDictionary</key>
+	<dict>
+		<key>51F3462C-730C-42EC-AE12-86EC8EF13F49</key>
+		<string>ssh://github.com/StuWatson/smackabird.git</string>
+	</dict>
+	<key>IDESourceControlProjectPath</key>
+	<string>platforms/ios/SmackABird.xcodeproj/project.xcworkspace</string>
+	<key>IDESourceControlProjectRelativeInstallPathDictionary</key>
+	<dict>
+		<key>51F3462C-730C-42EC-AE12-86EC8EF13F49</key>
+		<string>../../../..</string>
+	</dict>
+	<key>IDESourceControlProjectURL</key>
+	<string>ssh://github.com/StuWatson/smackabird.git</string>
+	<key>IDESourceControlProjectVersion</key>
+	<integer>110</integer>
+	<key>IDESourceControlProjectWCCIdentifier</key>
+	<string>51F3462C-730C-42EC-AE12-86EC8EF13F49</string>
+	<key>IDESourceControlProjectWCConfigurations</key>
+	<array>
+		<dict>
+			<key>IDESourceControlRepositoryExtensionIdentifierKey</key>
+			<string>public.vcs.git</string>
+			<key>IDESourceControlWCCIdentifierKey</key>
+			<string>51F3462C-730C-42EC-AE12-86EC8EF13F49</string>
+			<key>IDESourceControlWCCName</key>
+			<string>smackabird</string>
+		</dict>
+	</array>
+</dict>
+</plist>

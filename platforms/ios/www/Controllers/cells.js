@@ -25,7 +25,7 @@ birdApp.getCell = function (event) {
 		yGrid = 5*(height/9);
 	} else if (6*(height/9)<=event.y && event.y < 7*(height/9)) {
 		yGrid = 6*(height/9);
-	} 
+	}
 
 
 	return {x: xGrid, y: yGrid};
@@ -57,7 +57,8 @@ birdApp.newCell = function (start) {
 birdApp.hitCheck = function(cell) {
 	if(cell.x == birdApp.activeCell.x && cell.y == birdApp.activeCell.y) {
 		birdApp.score++;
-		return true
+		birdApp.playSmack();
+		return true;
 	}
 	return false;
 };
@@ -74,7 +75,7 @@ birdApp.menuCheck = function(event) {
 			return({howToPlay: true});
 		}
 	}
-}
+};
 
 birdApp.pauseCheck = function(touch) {
     var width = birdApp.width;
