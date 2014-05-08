@@ -2,7 +2,7 @@ birdApp.createTweetButton = function() {
 	var a = document.querySelector('#tweet');
 	a.style.display = 'block';
     a.style.top = 3*(birdApp.height/4)+'px';
-	a.href = "twitter://post?message=I%20just%20scored%20" + birdApp.score + "%20on%20Smack%20A%20Bird!%20See%20if%20you%20can%20beat%20me!";
+	a.href = "twitter://post?message=I%20just%20scored%20" + birdApp.score + "%20on%20Smack%20A%20Bird!%20See%20if%20you%20can%20beat%20me!%20%23SmackABird";
 };
 
 birdApp.drawGameOver = function() {
